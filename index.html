@@ -12,126 +12,142 @@
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="dist/custom.css">
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
 	<section>
-	  <h3>Framework Freedom with Microfrontends</h3>
+	  <h3 class="marker yellow">Framework Freedom with Micro-frontends</h3>
 	</section>
 	<section>
-	  <p>Rajasegar Chandran</p>
+	  <h3 class="marker yellow">Rajasegar Chandran</h3>
+	  <p>Frontend architect @ Freshworks</p>
+	  <p>Github: rajasegar</p>
+	  <p>Twitter: rajasegar_c</p>
 
 	</section>
 	<section>
 	  <section>
-	  The Freshworks Story
+	    <img src="dist/images/logo-fworks-black.svg" alt="freshworks logo"/>
+	    <p class="green marker">The Freshworks Story</p>
 	  </section>
 	  <section>
+	    <p></p>
 	    <ul>
 	      <li>One flagship product to more than 7 products and 100s of platform services
 	      <li>50K+ customers</li>
 	      <li>Ruby on RAILS to Java, Go, Ember.js, React and so on</li>
 	      <li>Most products are monolithic codebases</li>
-
+	      </ul>
 	  </section>
 	</section>
 	<section>
-	  <section>The Unified Product Experience</section>
-	  <section>
-	    <ol>
+	  <section><p class="cyan marker">The Unified Product Experience</p></section>
+	  <section><p></p>
+	    <ul>
 	      <li>Our business wanted to integrate different product experiences into an unified experience for the customers. </li>
 	      <li>Bundled products is the future</li>
 	      <li>Looking at infinite permutations and combinations for product UI experiences and capabilities</li>
 	      <li>Engg. vision needs to be aligned with business mission and product roadmaps.</li>
-	    </ol>
-	  </section>
-	</section>
-	<section><section>
-	    No more IFrames
+	    </ul>
 	  </section>
 	  <section>
-	    <ol>
+	    <img src="dist/images/CXBU-MicroFrontends.gif" height="600" alt="cxbu mfes"/>
+	  </section>
+	</section>
+	<section>
+	  
+	  <section>
+	    <p class="yellow marker">No more IFrames</p>
+	  </section>
+	  <section>
+	    <p class="orange marker">IFrames</p>
+	    <ul>
 	      <li>Legacy way of integration among different product and platform services</li>
 	      <li>Security</li>
 	      <li>Performance</li>
 	      <li>Accessibility</li>
 	      <li>Authentication hassles and overhead</li>
-	    </ol>
+	    </ul>
 	  </section>
 	</section>
-	<section>Making Ember & React play well together</section>
-	<section>Why MicroFrontends
-	  <ol>
+	<!-- <section><p>Making Ember & React play well together</p></section> -->
+	<section><p class="orange marker">Why Micro-Frontends</p>
+	  <ul>
 	    <li>Optimize of Feature development</li>
 	    <li>Make Front-end upgrades easier</li>
 	    <li>Increase customer focus</li>
-	</ol>
+	</ul>
 	</section>
-	<section>Why do you want to use multiple Frameworks?
+	<section><p class="yellow marker">Why multiple Frameworks?</p>
 	  <ul>
 	    <li>Autonomy</li>
 	    <li>Performance</li>
 	    <li>Technology Diversity</li>
 	  </ul>
 	</section>
-	<section>Autonomy
-	  <ol>
+	<section><p class="magenta marker">Autonomy</p>
+	  <ul>
 	    <li>Support agility by allowing teams to choose their own technology</li>
 	    <li>Lot of acquisitions means different tech stacks</li>
-	  </ol>
+	  </ul>
 	</section>
-	<section>Performance
+	<section><p class="yellow marker">Performance</p>
 
-	  <ol>
+	  <ul>
 	    <li>Major concern with monolithic codebases</li>
 	    <li>Faster landing pages are crucial for business success</li>
 	    <li>Rewriting a slower module with a better and faster framework of choice</li>
-	  </ol>
+	  </ul>
 	</section>
-	<section>Technology diversity
-	  <ol>
+	<section><p class="green marker">Technology diversity</p>
+	  <ul>
 	    <li>Putting all your eggs in one basket</li>
 	    <li>Don’t build all your products with one framework</li>
 	    <li>Betting on potential framework alternatives for the future</li>
 	    <li>Diversification is not only good for money but also for technology</li>
-	  </ol>
+	  </ul>
 	</section>
-	<section>Microfrontends Composition
+	<section><p class="orange marker">Microfrontends Composition</p>
 
-	  <ol>
+	  <ul>
 	    <li>Client-side composition</li>
 	    <li>Server-side composition</li>
 	    <li>Pros & Cons</li>
-	  </ol>
+	  </ul>
 	</section>
-	<section>Client-side composition
+	<section><p class="green marker">Client-side composition</p>
 	  <p>Because our existing product experiences are SPAs</p>
 	</section>
-	<section>single-spa
-	  <ol>
+	<section>
+	  <img src="dist/images/single-spa-mark-magenta.svg" width="100" alt="single spa logo"/>
+	  <p><a href="https://single-spa.js.org">single-spa</a></p>
+	  <ul>
 	    <li>JavaScript router for front-end microservices</li>
-	    <li>client-side routing</li>
+	    <li>Client-side routing</li>
 	    <li>JavaScript modules for integration at the browser</li>
 	    <li>Rich eco-system of tooling and libraries</li>
 	    <li>Helpful and broad community support</li>
 	    <li>Plugin architecture</li>
-	    <li>Different type of Micro-frontends for different use-cases</li>
-	  </ol>
+	  </ul>
 	</section>
-	<section>Challenges with MFEs
-	  <ol>
+	<section><p class="yellow marker">Challenges</p>
+	  <ul>
 	    <li>Working with a unified url</li>
 	    <li>CORS</li>
 	    <li>Deployments - Blue green</li>
 	    <li>Reusing components across Frameworks
-	      <ol>
+	      <ul>
 		<li>Common UI components</li>
 		<li>Common Library Code (Sharing same React version across different MFEs)</li>
-	      </ol>
+	      </ul>
 	    </li>
 	    <li>Communication with different MFEs</li>
-	  </ol>
+	  </ul>
 
 	</section>
 
