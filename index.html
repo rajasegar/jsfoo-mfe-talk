@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Framework Freedom with Micro-Frontends</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section>
+	  <h3>Framework Freedom with Microfrontends</h3>
+	</section>
+	<section>
+	  <p>Rajasegar Chandran</p>
+
+	</section>
+	<section>
+	  <section>
+	  The Freshworks Story
+	  </section>
+	  <section>
+	    <ul>
+	      <li>One flagship product to more than 7 products and 100s of platform services
+	      <li>50K+ customers</li>
+	      <li>Ruby on RAILS to Java, Go, Ember.js, React and so on</li>
+	      <li>Most products are monolithic codebases</li>
+
+	  </section>
+	</section>
+	<section>
+	  <section>The Unified Product Experience</section>
+	  <section>
+	    <ol>
+	      <li>Our business wanted to integrate different product experiences into an unified experience for the customers. </li>
+	      <li>Bundled products is the future</li>
+	      <li>Looking at infinite permutations and combinations for product UI experiences and capabilities</li>
+	      <li>Engg. vision needs to be aligned with business mission and product roadmaps.</li>
+	    </ol>
+	  </section>
+	</section>
+	<section><section>
+	    No more IFrames
+	  </section>
+	  <section>
+	    <ol>
+	      <li>Legacy way of integration among different product and platform services</li>
+	      <li>Security</li>
+	      <li>Performance</li>
+	      <li>Accessibility</li>
+	      <li>Authentication hassles and overhead</li>
+	    </ol>
+	  </section>
+	</section>
+	<section>Making Ember & React play well together</section>
+	<section>Why MicroFrontends
+	  <ol>
+	    <li>Optimize of Feature development</li>
+	    <li>Make Front-end upgrades easier</li>
+	    <li>Increase customer focus</li>
+	</ol>
+	</section>
+	<section>Why do you want to use multiple Frameworks?
+	  <ul>
+	    <li>Autonomy</li>
+	    <li>Performance</li>
+	    <li>Technology Diversity</li>
+	  </ul>
+	</section>
+	<section>Autonomy
+	  <ol>
+	    <li>Support agility by allowing teams to choose their own technology</li>
+	    <li>Lot of acquisitions means different tech stacks</li>
+	  </ol>
+	</section>
+	<section>Performance
+
+	  <ol>
+	    <li>Major concern with monolithic codebases</li>
+	    <li>Faster landing pages are crucial for business success</li>
+	    <li>Rewriting a slower module with a better and faster framework of choice</li>
+	  </ol>
+	</section>
+	<section>Technology diversity
+	  <ol>
+	    <li>Putting all your eggs in one basket</li>
+	    <li>Don’t build all your products with one framework</li>
+	    <li>Betting on potential framework alternatives for the future</li>
+	    <li>Diversification is not only good for money but also for technology</li>
+	  </ol>
+	</section>
+	<section>Microfrontends Composition
+
+	  <ol>
+	    <li>Client-side composition</li>
+	    <li>Server-side composition</li>
+	    <li>Pros & Cons</li>
+	  </ol>
+	</section>
+	<section>Client-side composition
+	  <p>Because our existing product experiences are SPAs</p>
+	</section>
+	<section>single-spa
+	  <ol>
+	    <li>JavaScript router for front-end microservices</li>
+	    <li>client-side routing</li>
+	    <li>JavaScript modules for integration at the browser</li>
+	    <li>Rich eco-system of tooling and libraries</li>
+	    <li>Helpful and broad community support</li>
+	    <li>Plugin architecture</li>
+	    <li>Different type of Micro-frontends for different use-cases</li>
+	  </ol>
+	</section>
+	<section>Challenges with MFEs
+	  <ol>
+	    <li>Working with a unified url</li>
+	    <li>CORS</li>
+	    <li>Deployments - Blue green</li>
+	    <li>Reusing components across Frameworks
+	      <ol>
+		<li>Common UI components</li>
+		<li>Common Library Code (Sharing same React version across different MFEs)</li>
+	      </ol>
+	    </li>
+	    <li>Communication with different MFEs</li>
+	  </ol>
+
+	</section>
+
+	
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+	  hash: true,
+
+	  // Learn about plugins: https://revealjs.com/plugins/
+	  plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
